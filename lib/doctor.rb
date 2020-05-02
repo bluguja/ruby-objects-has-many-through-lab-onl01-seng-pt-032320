@@ -21,8 +21,8 @@ def appointments
 end
 
 
-  def new_appointment(patient, date)
-     appointment = Appointment.new(patient, date, self)
+  def new_appointment(date, patient)
+     appointment = Appointment.new(date, date, self)
      @appointments << appointment
      appointment
   end
